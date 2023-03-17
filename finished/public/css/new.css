@@ -1,0 +1,163 @@
+/* Общие стили */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 10px;
+}
+
+nav a {
+    position: sticky;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+    margin-top: 25px;
+}
+
+nav li {
+    padding: 0;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav li>a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: #ccc;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+/* Стили для туров */
+
+ul li {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+ul li h3 {
+    margin-top: 0;
+}
+
+ul li p {
+    margin: 0;
+}
+
+
+/* Стили для контактов */
+
+#contact {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+/* Стили для футера */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.photos {
+    width: initial;
+    height: auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photos__item {
+    flex: 1 0 25%;
+    margin: 10px;
+    text-align: center;
+}
+
+.photos__item img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.photos__caption {
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+label {
+    margin: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    margin-top: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: gray;
+}
