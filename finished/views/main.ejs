@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Туристическая компания "TuristPro"</title>
+    <link rel="stylesheet" href="/css/new.css">
+</head>
+
+<body>
+    <%- include("templates/header") -%>
+        <main>
+            <section id="about">
+                <h2>О нас</h2>
+                <p>Мы - туристическая компания "TuristPro". Мы предлагаем организацию путешествий в разные уголки мира. Наша компания была основана в 2010 году и с тех пор мы помогли многим людям сделать свои мечты о путешествиях реальностью.</p>
+                <p>Наша миссия – предоставлять качественный и доступный туристский продукт клиентам, который удовлетворит их ожидания от отдыха и подарит незабываемые впечатления от поездок. Мы расширяем свой ассортимент туров, открываем новые направления,
+                    совершенствуем уже ставшие популярными экскурсионные туры и создаем новые, организовываем пляжный отдых на лучших курортах мира, чтобы клиентам было комфортно отдыхать и открывать мир с каждым новым путешествием. </p>
+                <p>Мы являемся и намерены впредь оставаться творческим, активным, добросовестным и успешным национальным туроператором, предоставляющим клиентам туры по всему миру с самыми высокими стандартами обслуживания. Мы работает в туристическом бизнесе
+                    25 лет и намерены продолжать свою деятельность еще много десятилетий. Мы верим в долгосрочные перспективы развития индустрии туризма и продолжим концентрировать наше внимание на совершенствовании и повышении качества продукта.</p>
+            </section>
+            <section id="tours">
+                <h2>Наши туры</h2>
+                <ul>
+                    <li>
+                        <h3>Поездка по Европе</h3>
+                        <p>Продолжительность: 14 дней</p>
+                        <p>Цена: $5000</p>
+                        <p>Описание: В этом туре вы посетите такие города, как Париж, Рим, Барселона и другие.</p>
+                    </li>
+                    <li>
+                        <h3>Поездка по Азии</h3>
+                        <p>Продолжительность: 21 день</p>
+                        <p>Цена: $8000</p>
+                        <p>Описание: В этом туре вы посетите такие страны, как Китай, Япония, Таиланд и другие.</p>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h1 style="text-align: center; padding-top: 30px;">Наши горячие предложения!</h1>
+                <ul class="photos">
+                    <li class="photos__item">
+                        <img src="/src/barsa.jpg" alt="Барселона">
+                        <p class="photos__caption">Тур по Барселоне</p>
+                    </li>
+                    <li class="photos__item">
+                        <img src="/src/japan.jpg" alt="Япония">
+                        <p class="photos__caption">Тур по Японии</p>
+                    </li>
+                    <li class="photos__item">
+                        <img src="/src/rome.jpg" alt="Рим">
+                        <p class="photos__caption">Тур по Риму</p>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h1 style="text-align: center; padding-top: 30px; border-top: 2px solid #ccc">Оставьте заявку прямо сейчас!</h1>
+                <form action="/yes" method="post">
+                    <label for="name">Ваше имя:</label>
+                    <input required type="text" id="name" name="name" placeholder="Введите ваше имя">
+
+                    <label for="email">Ваш Email:</label>
+                    <input required type="email" id="email" name="email" placeholder="Введите ваш email">
+
+                    <label for="hotel">Подобрать отель?</label>
+                    <input type="checkbox" id="hotel" name="hotel">
+
+                    <label for="direction">Выбрать направление</label>
+                    <select id="cars" name="cars">
+                        <option value="rome">Рим</option>
+                        <option value="brasil">Бразилия</option>
+                        <option value="china">Китай</option>
+                        <option value="japan">Япония</option>
+                      </select>
+                    <input type="submit">
+                </form>
+            </section>
+            <p style="border-bottom: 2px solid #ccc;"></p>
+            <section id="contact" style="margin-bottom: 0;">
+                <h1 style="text-align: left; ">Наши контакты:</h1>
+                <p>Телефон: +7 123 456 78 90</p>
+                <p>Адрес: г. Москва, ул. Пушкина, д. 1</p>
+            </section>
+        </main>
+        <footer>
+            <p>© 2023 Туристическая компания "TuristPro"</p>
+        </footer>
+</body>
+
+</html>
