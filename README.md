@@ -5,7 +5,7 @@
 > 1. Установить docker **если вы этого ещё не сделали**
 > -- Для этого необходимо запустить импортировать репозиторий
 > ```sh
-> mkdir myProject # здесь будет ваш проект
+> mkdir /home/myProject; cd /home/myProject # здесь будет ваш проект
 > git clone https://github.com/Salamander-m/FastTrevel --branch master # команда импорта
 > cd myProject # переходим в папку
 > bash finished/start iam # запуск и сборка вашего файла, где <iam> имя вашего проекта *можете не менять*
