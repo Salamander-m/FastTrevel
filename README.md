@@ -17,5 +17,8 @@ docker ps
 ![image](https://user-images.githubusercontent.com/74792658/230726023-533752ca-2660-42a2-aba6-1756ceb6067d.png)
 > *имя вначале и id могут отличаться*
 3. Далее необходимо открыть настройки виртуальной машины и перебросить порты на наш хост
-![image](https://user-images.githubusercontent.com/74792658/230726263-3b73ca5a-a39c-4b61-a11e-580e0b418eb5.png)
-
+![image](https://user-images.githubusercontent.com/74792658/230726285-41e92812-542e-40a7-a1f3-3551b8da3d5b.png)
+> Можете указать любой порт хоста, я буду использовать *8888*
+4. Затем можно открывать в бразуере ваш сервер по адресу 127.0.0.1:8888
+> Теперь мы можем лицезреть наш сайт
+![image](https://user-images.githubusercontent.com/74792658/230726374-170fb2e9-1bc3-4941-9a45-d62a37c7967c.png)
