@@ -1,8 +1,8 @@
 FROM node:16
 
-RUN mkdir -p /home/mf/FastTrevel/finished/node_modules && chown -R node:node /home/mf/FastTrevel/finished
+RUN mkdir -p /home/myProject/FastTrevel/finished/node_modules && chown -R node:node /home/myProject/FastTrevel/finished/
 
-WORKDIR /home/mf/FastTrevel/finished
+WORKDIR /home/myProject/FastTrevel/finished/
 
 COPY package*.json ./
 
