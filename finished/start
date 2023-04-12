@@ -1,3 +1,19 @@
-docker build -t $1/finished .
-docker run --name finished -p 8988:8080 -d $1/finished
-
+#!/bin/bash
+source ../output
+if [[ -v $nameOfProgram ]]; then
+        docker build -t me/site $PWD/finished
+        docker run --name $nameOfProgram -p $PORT:8080 -d me/site
+else
+        read -p "Не найдено имя программы, запустить установку сейчас? (Y/N)" -n 1 answer
+        case $answer in
+                y|Y)
+                        echo -e "\n Запускаю.."
+                        cd ..
+                        bash dockerInstall
+                        ;;
+                n|N)
+                        ;;
+                *)
+                        ;;
+        esac
+fi
