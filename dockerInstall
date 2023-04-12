@@ -1,11 +1,27 @@
 #!/bin/bash
+function out {
+        printf "%s\n"
+        printf '%.s-' {1..30}
+        printf "%s\n"
+        printf "Образ называется: $nameOfProgram"
+        printf "%s\n"
+        printf "Образ запущен на 10.0.2.15:$PORT %s\n"
+        printf "%s\n" "Теперь необходимо пробросить порты, где хост будет 127.0.0.1:8888 (порт можете указать любой)"
+        printf "А гость -  10.0.2.15:$PORT"
+        printf "%s\n"
+        printf '%.s-' {1..30}
+        printf "%s\n"
+}
 PORT=$((8000 + RANDOM % 999 + 1))
 read -p "Введите имя вашей программы (по умолчанию: mySite) " nameOfProgram
 nameOfProgram=${nameOfProgram:-mySite}
 if [ -e /var/lib/docker/  ]
 then
-        docker build -t me/site $PWD/finished
-        docker run --name $nameOfProgram -p $PORT:8080 -d me/site
+        if docker build -t me/site $PWD/finished && docker run --name $nameOfProgram -p $PORT:8080 -d me/site; then
+                out
+        else
+                echo "Ошибка! Попробуйте использовать скрипт stop"
+        fi
 else
         sudo apt-get update
         sudo apt-get install \
@@ -23,15 +39,6 @@ else
 
         docker build -t me/site $PWD/finishied
         docker run --name $nameOfProgram -p $PORT:8080 -d me/site
+        out
 fi
-printf "%s\n"
-printf '%.s-' {1..30}
-printf "%s\n"
-printf "Образ называется: $nameOfProgram"
-printf "%s\n"
-printf "Образ запущен на 10.0.2.15:$PORT %s\n"
-printf "%s\n" "Теперь необходимо пробросить порты, где хост будет 127.0.0.1:8888 (порт можете указать любой)"
-printf "А гость -  10.0.2.15:$PORT"
-printf "%s\n"
-printf '%.s-' {1..30}
-printf "%s\n"
+echo -e "name=$nameOfProgram \nPORT=$PORT \nimage=me/site" > output
