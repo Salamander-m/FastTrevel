@@ -1,0 +1,131 @@
+/* Reset default browser styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Define the styles for the body element */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+
+/* Define the styles for the header */
+
+header {
+    background-color: rgb(39, 23, 23);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav li:first-child {
+    margin-left: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Define the styles for the main content area */
+
+main {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    font-size: 2em;
+    margin: 0 0 1em;
+}
+
+main p {
+    margin: 0 0 1.5em;
+}
+
+
+/* Define the styles for the sidebar */
+
+aside {
+    flex: 1;
+    padding: 1em;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+aside h3 {
+    font-size: 1.5em;
+    margin: 0 0 0.5em;
+}
+
+aside ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside li {
+    margin: 0.5em 0;
+}
+
+
+/* Define the styles for links */
+
+a {
+    color: #0071c5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Define the styles for buttons */
+
+button {
+    padding: 0.5em 1em;
+    background-color: #0071c5;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005499;
+}
