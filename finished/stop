@@ -1,2 +1,11 @@
-docker stop -t 1 finished
-docker rm finished
+#!bin/bash
+source ../output
+echo "Произвожу удаление $name"
+if docker stop -t 1 $name > /dev/null; then
+        docker rm $name > /dev/null
+        echo "Успешно!"
+        echo "Для запуска образа используйте скрипт start или dockerInstall"
+else
+        echo "Что-то пошло не так: попробуйте запустить скрипт dockerInstall"
+fi
+
