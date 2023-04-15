@@ -1,0 +1,5 @@
+#!/bin/bash
+apt install openssh-server
+ufw allow OpenSSH
+ufw allow 22/tcp
+ufw allow 22
