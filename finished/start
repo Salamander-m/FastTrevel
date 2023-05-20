@@ -1,8 +1,8 @@
 #!/bin/bash
 source ../output
-if [[ -v $nameOfProgram ]]; then
-        docker build -t me/site $PWD/finished
-        docker run --name $nameOfProgram -p $PORT:8080 -d me/site
+if [[ $name ]]; then
+        docker build -t me/site $PWD
+        docker run --name $name -p $PORT:8080 -d me/site
 else
         read -p "Не найдено имя программы, запустить установку сейчас? (Y/N)" -n 1 answer
         case $answer in
