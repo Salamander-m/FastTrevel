@@ -1,0 +1,55 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="booking.css">
+</head>
+<header>
+    <div class="logo">
+      <img src="logo.png" alt="Логотип компании" width="70" height="70">
+    </div>
+    <h1>Бронирование</h1>
+    <nav>
+      <ul>
+        <li><a href="#deals">Акции</a></li>
+        <li><a href="#search">Поиск</a></li>
+        <li><a href="#about">Контакты</a></li>
+        <li><a href="main.html">Главная</a></li>
+      </ul>
+    </nav>
+  </header>
+<form action="process_booking.php" method="post">
+    <br><br><br><br><br>
+    <h2>Данные о заказе</h2>
+    <label for="region">Регион:</label>
+    <input type="text" id="region" name="region" required>
+  
+    <label for="route_name">Наименование маршрута:</label>
+    <input type="text" id="route_name" name="route_name" required>
+  
+    <label for="zones">Выбранные зоны для посещения:</label>
+    <textarea id="zones" name="zones" required></textarea>
+  
+    <label for="dates">Предполагаемые даты отдыха:</label>
+    <input type="date" id="dates" name="dates" required>
+  
+    <label for="people_count">Количество человек:</label>
+    <input type="number" id="people_count" name="people_count" required>
+  
+    <label for="total_cost">Стоимость:</label>
+    <input type="number" id="total_cost" name="total_cost" required>
+  
+    <h2>Выбор дополнительных услуг</h2>
+    <label><input type="checkbox" name="guide" value="guide">Услуги проводника</label><br>
+    <label><input type="checkbox" name="rental" value="rental">Услуги аренды туристического оборудования</label><br>
+    <label><input type="checkbox" name="photographer" value="photographer">Услуги фотографа/видеооператора</label><br>
+    <label><input type="checkbox" name="insurance" value="insurance">Страхование от несчастных случаев</label><br>
+  
+    <label for="comment">Дополнительный комментарий к заказу:</label>
+    <textarea id="comment" name="comment"></textarea>
+  
+    <label for="email">Email заказчика:</label>
+    <input type="email" id="email" name="email" required>
+  
+    <label for="total_cost">Итоговая стоимость:</label>
+    <input type="number" id="total_cost" name="total_cost" required>
+  
+    <button type="submit">Оформить бронирование</button>
+  </form>

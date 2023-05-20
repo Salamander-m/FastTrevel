@@ -1,0 +1,289 @@
+/* Шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Общие стили */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+a {
+  color: #ff6b6b;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Шапка */
+header {
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  font-size: 20px;
+}
+
+.logo img {
+  max-width: 250px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  margin-left: 30px;
+}
+
+.booking-algorithm { padding: 20px 0; text-align: center; }
+.booking-algorithm h2 {
+  font-size: 36px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.booking-steps {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.booking-step {
+flex: 1 1 300px;
+margin: 20px;
+display: flex;
+align-items: center;
+}
+
+.booking-step-icon {
+margin-right: 20px;
+}
+
+.booking-step-icon img {
+max-width: 80px;
+}
+
+.booking-step-text h3 {
+font-size: 26px;
+margin-bottom: 10px;
+}
+
+.booking-step-text p {
+  font-size: 20px;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.company-info {
+  border: 2px solid #ccc; /* Толщина и цвет рамки */
+  padding: 20px; /* Отступы внутри рамки */
+  border-radius: 10px; /* Закругление углов рамки */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Тень вокруг рамки */
+}
+.company-info h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.company-description p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 10px;
+}
+
+.customer-reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+}
+
+.review {
+  flex: 0 0 400px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  padding: 30px;
+  margin: 20px;
+  text-align: left;
+}
+
+.customer-name {
+  font-style: italic;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.deals {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.deals h3 {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.deal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.deal img {
+  max-width: 400px;
+  margin-right: 50px;
+}
+
+.deal h4 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.deal p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.deal a {
+  display: inline-block;
+  background-color: #008000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.deal a:hover {
+  background-color: #006400;
+}
+/* Форма поиска */
+.search-form {
+  border: 2px solid #ccc; /* Толщина и цвет рамки */
+  padding: 20px; /* Отступы внутри рамки */
+  border-radius: 10px; /* Закругление углов рамки */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Тень вокруг рамки */
+  padding: 80px 0;
+  text-align: center;
+}
+
+.search-form h3 {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+select,
+input[type="date"],
+input[type="number"] {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  background-color: #008000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #006400;
+}
+.contact-info {
+  background-color: #f7f7f7;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact-info h3 {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-details p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-details i {
+  margin-right: 10px;
+  color: #008000;
+  font-size: 24px;
+}
+footer {
+  background-color: #bf6852;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-logo img {
+  max-width: 100px;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 20px;
+  color: #fff;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #f7f7f7;
+}
+
+.copyrignt {
+  margin-top: 20px;
+  font-size: 16px;
+}

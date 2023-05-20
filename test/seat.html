@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Выберите зоны в маршруте</title>
+	<style type="text/css">
+        /* Шрифты */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        /* Общие стили */
+        * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Шапка */
+        header {
+            background-color: #fff;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            font-size: 20px;
+        }
+        header nav ul li a {
+            color: #ff6b6b;
+            text-decoration: none;
+        }
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            align-items: center;
+        }
+        
+        nav li {
+            margin-left: 30px;
+        }
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			margin: 0;
+			font-size: 24px;
+			font-weight: normal;
+		}
+		.container {
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		.route {
+			background-color: #fff;
+			border: 1px solid #ccc;
+			padding: 20px;
+			margin-bottom: 20px;
+			position: relative;
+			height: 500px;
+		}
+		.description {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 250px;
+			padding: 10px;
+			background-color: rgba(255,255,255,0.8);
+			border-radius: 5px;
+			box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+			overflow-y: scroll;
+			height: 500px;
+		}
+		.description img {
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		.zone {
+			position: absolute;
+			border-radius: 50%;
+			background-color: #ccc;
+			width: 20px;
+			height: 20px;
+			cursor: pointer;
+		}
+		.zone:hover {
+			background-color: #666;
+		}
+		.booking-btn {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<header>
+        <div class="logo">
+            <img src="logo.png" alt="Логотип компании" width="70" height="70">
+        </div>
+        <h1>Выберите зоны в маршруте</h1>
+        <nav>
+            <ul>
+            <li><a href="#deals">Акции</a></li>
+            <li><a href="#search">Поиск</a></li>
+            <li><a href="#about">Контакты</a></li>
+            <li><a href="main.html">Главная</a></li>
+            </ul>
+        </nav>
+	</header>
+    <br> <br> <br>
+    <br> <br> <br>
+	<div class="container">
+		<div class="route">
+			<div class="description">
+				<h2>Санта-Муерта</h2>
+				<img src="zone1.jpg">
+				<p>Один из старейших соборов на Земле!</p>
+				<h2>Красный Лес</h2>
+				<img src="zone2.jpg">
+				<p>Узрите ослепительную красоту удивительных деревьев!</p>
+				<h2>Пуджедельня</h2>
+				<img src="zone3.jpg">
+				<p>Пройдитесь по первой в мире мануфактуре!</p>
+			</div>
+			<div class="zone" style="top: 50px; left: 350px;"></div>
+			<div class="zone" style="top: 150px; left: 400px;"></div>
+			<div class="zone" style="top: 250px; left: 600px;"></div>
+		</div>
+		<a href="booking.html" class="booking-btn">Перейти к бронированию</a>
+	</div>
+</body>
+</html>
