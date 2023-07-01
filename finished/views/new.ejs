@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Название сайта</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/css/ss.css">
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="logo.png" alt="Логотип компании">
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">О компании</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</nav>
+		<div class="actions">
+			<h2>Акции</h2>
+			<!-- здесь можно разместить информацию о текущих акциях -->
+		</div>
+		<div class="booking">
+			<h2>Управление бронированием</h2>
+			<!-- здесь можно разместить форму для управления бронированием -->
+		</div>
+		<div class="search">
+			<h2>Поиск</h2>
+			<form action="#" method="get">
+				<label for="region">Регион:</label>
+				<input type="text" id="region" name="region" required>
+				<br>
+				<label for="dates">Даты отдыха:</label>
+				<input type="text" id="dates" name="dates" required>
+				<br>
+				<label for="participants">Кол-во участников:</label>
+				<input type="number" id="participants" name="participants" required>
+				<br>
+				<label for="level">Уровень подготовки:</label>
+				<select id="level" name="level">
+					<option value="beginner">Начинающий</option>
+					<option value="intermediate">Средний</option>
+					<option value="advanced">Продвинутый</option>
+				</select>
+				<br>
+				<input type="submit" value="Поиск">
+			</form>
+		</div>
+	</header>
+	<main>
+		<section class="booking-algorithm">
+			<h2>Алгоритм бронирования</h2>
+			<!-- здесь можно разместить анимированную инфографику, описывающую шаги в алгоритме бронирования -->
+		</section>
+		<section class="company-info">
+			<h2>О компании</h2>
+			<p>Цель компании: [описание цели]</p>
+			<p>Девиз компании: [описание девиза]</p>
+			<h3>Отзывы клиентов</h3>
+			<ul>
+				<li>Отзыв 1</li>
+				<li>Отзыв 2</li>
+				<li>Отзыв 3</li>
+			</ul>
+		</section>
+		<section class="promotions">
+			<h2>Акции</h2>
+			<div class="promotion">
+				<img src="promotion1.jpg" alt="Изображение акции">
+				<h3>Название акции</h3>
+				<p>Краткое описание акции</p>
+				<a href="#">Подробнее</a>
+			</div>
+			<div class="promotion">
+				<img src="promotion2.jpg" alt="Изображение акции">
+				<h3>Название акции</h3>
+				<p>Краткое описание акции</p>
+				<a href="#">Подробнее</a>
+			</div>
+			<!-- здесь можно добавить информацию о других акциях -->
+		</section>
+		<section class="subscribe">
+			<h2>Подпишитесь на наши закрытые акции</h2>
+			<form action="#" method="post">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<input type="submit" value="Подписаться">
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>Телефон: +7(812) ХХХ-ХХ-ХХ</p>
+	</footer>
+</body>
+</html>

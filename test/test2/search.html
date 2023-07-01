@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Результаты поиска маршрутов</title>
+  <link rel="stylesheet" href="main.css">
+  <style>
+    /* стили для таблицы результатов поиска */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+    button {
+        font-size: 18px;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 0 auto;
+        margin-top: 25px;
+        display: block;
+    }
+  </style>
+</head>
+<header>
+    <div class="logo">
+      <img src="src/travel.png" alt="Travel Company Logo">
+    </div>
+  <h1>Результаты поиска маршрутов</h1>
+
+    <nav>
+      <ul>
+        <li><a href="#">Акции</a></li>
+        <li><a href="#">Поиск</a></li>
+        <li><a href="main.html">Главная</a></li>
+      </ul>
+    </nav>
+</header>
+<body>
+  <table>
+    <tr>
+      <th>Маршрут</th>
+      <th>Продолжительность</th>
+      <th>Стоимость</th>
+    </tr>
+    <tr>
+      <td>Экскурсия до главного лагеря горы Эверест</td>
+      <td>3 дня</td>
+      <td>10000 руб.</td>
+    </tr>
+    <tr>
+      <td>Активный отдых: кемпинг к Золотистому Лесу</td>
+      <td>5 дней</td>
+      <td>15000 руб.</td>
+    </tr>
+    <tr>
+      <td>Лодочный спуск к древнему храму Ацтеков</td>
+      <td>7 дней</td>
+      <td>20000 руб.</td>
+    </tr>
+  </table>
+  <button onclick="window.location.href = 'seat.html'">Перейти к выбору зон</button>
+  <footer style="position:absolute; bottom: 0;">
+    <p>Телефон: +7(812)312-56-64</p>
+    <!-- Якорь, что отправляет при нажатии наверх -->
+    <p><a href="main.html">На Главную</a></p>
+  </footer>
+</body>
+</html>

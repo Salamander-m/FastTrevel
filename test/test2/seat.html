@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Выбор зон для обязательного посещения</title>
+  <meta charset="UTF-8">
+  <title>Результаты поиска маршрутов</title>
+  <link rel="stylesheet" href="main.css">
+  <style>
+    /* стили для формы */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* стили для текстового поля */
+input[type="text"] {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type="text"]:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* стили для кнопок */
+button {
+  background-color: #ddd;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4CAF50;
+  color: #fff;
+}
+    /* стили для списка зон */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.zones li {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+li span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* стили для заголовка */
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.zones li {
+  font-size: 20px;
+}
+input[type="submit"] {
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 25px;
+  display: block;
+}
+  </style>
+</head>
+<header>
+  <div class="logo">
+    <img src="src/travel.png" alt="Travel Company Logo">
+  </div>
+<h1>Результаты поиска маршрутов</h1>
+
+  <nav>
+    <ul>
+      <li><a href="#">Акции</a></li>
+      <li><a href="#">Поиск</a></li>
+      <li><a href="main.html">Главная</a></li>
+    </ul>
+  </nav>
+</header>
+<body>
+  <h1>Выберите зоны для обязательного посещения</h1>
+  <ul class="zones">
+    <li>Экскурсия до главного лагеря горы Эверест</li>
+    <li>Активный отдых: кемпинг к Золотистому Лесу</li>
+    <li>Лодочный спуск к древнему храму Ацтеков</li>
+  </ul>
+  <form style="text-align: center;">
+    <input type="submit" value="Отправить выбранные зоны">
+  </form>
+  <script>
+    // получаем все элементы списка зон
+    const zoneItems = document.querySelectorAll('li');
+
+    // добавляем обработчик событий клика к каждому элементу списка зон
+    zoneItems.forEach((item) => {
+      item.addEventListener('click', () => {
+        // проверяем текущий цвет фона элемента
+        if (item.style.backgroundColor === 'rgb(76, 175, 80)') {
+          // если цвет зеленый, то изменяем его обратно на исходный
+          item.style.backgroundColor = '#fff';
+        } else {
+          // иначе изменяем цвет на зеленый
+          item.style.backgroundColor = '#4CAF50';
+        }
+      });
+    });
+  </script>
+    <footer style="position:absolute; bottom: 0;">
+      <p>Телефон: +7(812)312-56-64</p>
+      <!-- Якорь, что отправляет при нажатии наверх -->
+      <p><a href="main.html">На Главную</a></p>
+    </footer>
+</body>
+</html>

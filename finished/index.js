@@ -8,7 +8,7 @@ app.use(express.static('public')) // подключение папки, где �
 
 // обработка url'ov
 app.get("/", (req, res) => {
-    res.render("main")
+    res.render("new")
 });
 
 app.get("/about", (req, res) => {

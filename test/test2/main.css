@@ -6,6 +6,16 @@ header {
   background-color: #f2f2f2;
 }
 
+h2 {
+  font-size: 36px;
+}
+
+body {
+  max-width: 99.1vw;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
 .logo img {
   height: 50px;
 }
@@ -19,7 +29,16 @@ nav li {
   margin-right: 20px;
 }
 
+nav a {
+  font-weight: bold;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #000;
+}
+
 .booking {
+  margin-left: 10%;
+  margin-right: 10%;
   background-color: #fff;
   padding: 50px 20px;
 }
@@ -52,6 +71,8 @@ nav li {
 }
 
 .about-info {
+  margin-left: 10%;
+  margin-right: 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -80,16 +101,12 @@ nav li {
 
 .reviews h3 {
   font-size: 20px;
+  margin-left: 120px;
   margin-bottom: 10px;
 }
 
-.reviews ul {
-  list-style: none;
-  padding: 0;
-}
-
 .reviews li {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
@@ -210,4 +227,29 @@ nav li {
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+}
+footer {
+  margin: 0;
+  background-color: #f2f2f2;
+  color: #444;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+}
+
+footer a {
+  color: #444;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #000;
+}
+
+@media (max-width: 767px) {
+  footer {
+    position: static;
+  }
 }

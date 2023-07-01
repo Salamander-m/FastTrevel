@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Travel Company</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
+  <!-- Скрол наверх, при нажатии "Наверх" -->
+  <a id="top"></a>
   <header>
     <div class="logo">
-      <img src="logo.png" alt="Travel Company Logo">
+      <img src="src/travel.png" alt="Travel Company Logo">
     </div>
     <nav>
       <ul>
         <li><a href="#">Акции</a></li>
         <li><a href="#">Поиск</a></li>
-        <li><a href="#">Управление бронированием</a></li>
+        <li><a href="booking.html">Управление бронированием</a></li>
       </ul>
     </nav>
   </header>
@@ -23,18 +25,19 @@
     <h2>Как забронировать?</h2>
     <div class="booking-steps">
       <div class="booking-step">
-        <img src="step1.png" alt="Step 1">
+        <img src="src/step1.png" alt="Step 1">
         <p>Выберите тур</p>
       </div>
       <div class="booking-step">
-        <img src="step2.png" alt="Step 2">
+        <img src="src/step2.png" alt="Step 2">
         <p>Заполните форму</p>
-      </div      <div class="booking-step">
-        <img src="step3.png" alt="Step 3">
+      </div>      
+      <div class="booking-step">
+        <img src="src/step3.png" alt="Step 3">
         <p>Оплатите тур</p>
       </div>
       <div class="booking-step">
-        <img src="step4.png" alt="Step 4">
+        <img src="src/step4.png" alt="Step 4">
         <p>Получите подтверждение</p>
       </div>
     </div>
@@ -58,7 +61,7 @@
 
   <section class="search">
     <h2>Поиск</h2>
-    <form>
+    <form action="search.html">
       <label>Выбор региона:</label>
       <select>
         <option>Европа</option>
@@ -79,19 +82,19 @@
     <h2>Акции</h2>
     <div class="promotions-list">
       <div class="promotion">
-        <img src="promo1.png" alt="Promotion 1">
+        <img src="src/beach.png" alt="Promotion 1">
         <h3>Летние скидки</h3>
         <p>Скидки до 30% на туры в Европу в июле-августе</p>
         <a href="#">Подробнее</a>
       </div>
       <div class="promotion">
-        <img src="promo2.png" alt="Promotion 2">
+        <img src="src/pagoda.png" alt="Promotion 2">
         <h3>Раннее бронирование</h3>
         <p>Скидки до 50% на туры в Азию при бронировании до конца мая</p>
         <a href="#">Подробнее</a>
       </div>
       <div class="promotion">
-        <img src="promo3.png" alt="Promotion 3">
+        <img src="src/america.png" alt="Promotion 3">
         <h3>Новогодние праздники</h3>
         <p>Специальные туры на Новый год в Америку и Австралию</p>
         <a href="#">Подробнее</a>
@@ -100,7 +103,7 @@
   </section>
 
   <section class="subscribe">
-    <h2>Подписка на закрытые акции</h2>
+    <h2>Подписишь и узнавай о горячих акциях первый!</h2>
     <form>
       <label>Введите ваш email:</label>
       <input type="email" placeholder="example@mail.com">
@@ -109,7 +112,9 @@
   </section>
 
   <footer>
-    <p>Телефон: +7(812)ХХХ-ХХ-ХХ</p>
+    <p>Телефон: +7(812)312-56-64</p>
+    <!-- Якорь, что отправляет при нажатии наверх -->
+    <p><a href="#top">Наверх</a></p>
   </footer>
 </body>
 </html>
